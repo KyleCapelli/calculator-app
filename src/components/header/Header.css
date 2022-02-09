@@ -1,0 +1,32 @@
+.header__container {
+  display: flex;
+  flex-direction: row;
+  width: 550px;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--font-family);
+  color: white;
+}
+
+.header__theme {
+  display: flex;
+  align-items: flex-end;
+  font-size: 14px;
+}
+
+.header__theme-text {
+  margin: auto 20px 8px auto;
+}
+
+.header__theme-options {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 700px) {
+  .header__container {
+    width: 350px;
+  }
+}

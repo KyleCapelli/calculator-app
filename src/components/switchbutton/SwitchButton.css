@@ -1,0 +1,72 @@
+.switch__theme-selector {
+  -webkit-appearance: none;
+  width: 80px;
+  height: 25px;
+  background: hsl(223, 31%, 20%);
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  border-radius: 34px;
+  cursor: pointer;
+  padding: 14px 4px;
+}
+
+.switch__theme-selector.one {
+  background: hsl(223, 31%, 20%);
+}
+
+.switch__theme-selector.two {
+  background: hsl(0, 5%, 81%);
+}
+
+.switch__theme-selector.three {
+  background: hsl(268, 71%, 12%);
+}
+
+.switch__theme-selector:hover {
+  opacity: 1;
+}
+
+.switch__theme-selector::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: hsl(6, 63%, 50%);
+  cursor: pointer;
+}
+
+.switch__theme-selector::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: none;
+  background: hsl(6, 63%, 50%);
+  cursor: pointer;
+}
+
+.switch__theme-selector.one::-moz-range-thumb {
+  background: hsl(6, 63%, 50%);
+}
+
+.switch__theme-selector.two::-moz-range-thumb {
+  background: hsl(25, 98%, 40%);
+}
+
+.switch__theme-selector.three::-moz-range-thumb {
+  background: hsl(176, 100%, 44%);
+}
+
+.switch__theme-selector.one::-webkit-slider-thumb {
+  background: hsl(6, 63%, 50%);
+}
+
+.switch__theme-selector.two::-webkit-slider-thumb {
+  background: hsl(25, 98%, 40%);
+}
+
+.switch__theme-selector.three::-webkit-slider-thumb {
+  background: hsl(176, 100%, 44%);
+}

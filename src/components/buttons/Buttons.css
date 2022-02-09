@@ -1,0 +1,71 @@
+.buttons__container {
+  font-family: var(--font-family);
+  width: 550px;
+  background: hsl(224, 36%, 15%);
+  margin-top: 20px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  justify-content: space-around;
+  padding: 15px;
+}
+
+.buttons__row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.buttons__row div {
+  width: 100px;
+  height: 60px;
+  cursor: pointer;
+  background: #eae3db;
+  font-size: 32px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(221, 14%, 31%);
+  box-shadow: inset 0px -5px 0px hsl(28, 16%, 65%);
+}
+
+div.blue-delete,
+div.blue-reset {
+  font-size: 18px;
+  background-color: hsl(225, 21%, 49%);
+  color: white;
+  box-shadow: inset 0px -5px 0px hsl(224, 28%, 35%);
+}
+
+div.blue-reset {
+  width: 243px;
+}
+
+div.red-equals {
+  width: 243px;
+  font-size: 18px;
+  color: white;
+  background-color: hsl(6, 63%, 50%);
+  box-shadow: inset 0px -5px 0px hsl(6, 70%, 34%);
+}
+
+@media screen and (max-width: 700px) {
+  .buttons__container {
+    width: 350px;
+    height: 450px;
+  }
+
+  .buttons__row div {
+    height: 70px;
+    width: 65px;
+  }
+
+  div.blue-reset {
+    width: 145px;
+  }
+
+  div.red-equals {
+    width: 145px;
+  }
+}
